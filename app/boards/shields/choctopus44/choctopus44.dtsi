@@ -10,8 +10,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &physical_layout0; // <-- This might break the support
-        zmk,battery = &vbatt;
+        zmk,physical-layout = &physical_layout0;
     };
 
     default_transform: keymap_transform_0 {
@@ -55,10 +54,6 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(3,0) RC(6,0) RC(6,1) RC(6,2) 
         compatible = "zmk,keymap-sensors";
         sensors = <&middle_encoder>;
         triggers-per-rotation = <18>;
-    };
-
-    vbatt: vbatt {
-        compatible = "zmk,battery-nrf-vddh";
     };
 };
 
