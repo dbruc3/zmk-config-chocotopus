@@ -51,7 +51,7 @@ jobs:
         run: west zephyr-export
 
       - name: Build choctopus44
-        run: west build -s app -p -b nice_nano_v2 -- -DSHIELD="choctopus44" -DSNIPPET="zmk-usb-logging"
+        run: west build -s app -p -b nice_nano_v2 -- -DSHIELD="choctopus44"
 
       - name: Rename artifact
         run: |
