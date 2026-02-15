@@ -25,7 +25,7 @@
         &kp LSHFT &kp Z &kp X &kp C &kp V &kp B  &kp RET  &kp N &kp M &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
               &kp LGUI &kp LALT &kp LCTRL &lt 1 SPACE           &kp SPACE &mt RCTRL RC(B) &kp LEFT &kp RIGHT
       >;
-      sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+      sensor-bindings = <&inc_dec_kp UP DOWN>;
     };
 
     lower_layer {
@@ -35,7 +35,7 @@
         &kp LPAR &none &none &none &kp LBRC &kp LBKT        &kp RET      &kp RBKT &kp RBRC &kp BSLH &kp UNDER &kp PLUS &kp RPAR
                          &trans &trans &trans &trans               &kp SPACE &mo 2 &trans &trans
       >;
-      sensor-bindings = <&inc_dec_kp UP DOWN>;
+      sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
     };
 
     adjust_layer {
